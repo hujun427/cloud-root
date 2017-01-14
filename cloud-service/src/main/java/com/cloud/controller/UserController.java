@@ -27,10 +27,10 @@ public class UserController {
 		return userRepository.findByLevel(level);
 	}
 	
-	/*@RequestMapping(value = "/get", method = RequestMethod.GET)
+	@RequestMapping(value = "/getByCode", method = RequestMethod.GET)
 	public List<User> getUser(String code) {
 		return userRepository.findByCodeLike(code);
-	}*/
+	}
 	
 	@RequestMapping(value = "/getAll", method = RequestMethod.GET)
 	public List<User> getAllUser() {
