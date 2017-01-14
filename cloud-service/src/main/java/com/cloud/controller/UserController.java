@@ -41,11 +41,11 @@ public class UserController {
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public String add(Integer level) {
 		User user = new User();
-		user.setName("胡君");
+		user.setName("张三");
 		user.setAge(30);
 		user.setLevel(level);
-		user.setCode("hujun");
-		user.setAddress("高新区中和镇");
+		user.setCode("zhangsan");
+		user.setAddress("上海市徐汇区");
 		userRepository.save(user);
 		return "add success";
 	}
